@@ -5,6 +5,7 @@
 
 SCRIPT=$(readlink -f "$0")
 export TMPDIR=/tmp
+export APPTAINER_TMPDIR=/tmp
 if [[ ! -z $CONTAINER_BUILDER_TARGET_DIR ]]; then
 	TARGET_DIR=$CONTAINER_BUILDER_TARGET_DIR
 else
